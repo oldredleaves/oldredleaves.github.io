@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!-- Mirrored from www.horsebro1.com/index.php/archives/53/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 05:48:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Git常用命令 - 骑木马的哥哥博客</title>
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="https://www.horsebro1.com/usr/themes/maupassant/javascript/html5shiv.js"></script>
+    <![endif]-->
+    <!-- 因为后台的admin目录设置了认证，因此将该css文件复制到了主题目录下 -->
+    <!--<link rel="stylesheet" href="https://www.horsebro1.com/admin/css/normalize.css">-->
+    <link rel="stylesheet" href="../../../usr/themes/maupassant/normalize.css">
+    <link rel="stylesheet" href="../../../usr/themes/maupassant/style.css">
+    <meta name="description" content="查看git配置信息git -l" />
+<link rel="pingback" href="../../action/xmlrpc.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../action/xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../action/xmlrpc2ace.html?wlw" />
+<link rel="alternate" type="application/rss+xml" title="Git常用命令 &raquo; 骑木马的哥哥博客 &raquo; RSS 2.0" href="../../feed/archives/53/index.html" />
+<link rel="alternate" type="application/rdf+xml" title="Git常用命令 &raquo; 骑木马的哥哥博客 &raquo; RSS 1.0" href="../../feed/rss/archives/53/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Git常用命令 &raquo; 骑木马的哥哥博客 &raquo; ATOM 1.0" href="../../feed/atom/archives/53/index.html" />
+<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-53'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-53'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+(function () {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        triggers: ['scroll', 'mousemove', 'keyup', 'touchstart'],
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        triggers: ['onfocus', 'onmousemove', 'onkeyup', 'ontouchstart'],
+        load: 'onload'
+    }, added = false;
+
+    document[event.add](event.load, function () {
+        var r = document.getElementById('respond-post-53'),
+            input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = '_';
+        input.value = (function () {
+    var _QcGtmXD = 'c6'//'CQ'
++'cb4'//'C'
++//'h4'
+'239'+/* 'wq'//'wq' */''+'51'//'4'
++//'f'
+'dd'+//'p'
+'8ea'+//'tkS'
+'fc9'+'79'//'Bf9'
++'c35'//'3'
++//'Fg'
+'0'+//'w'
+'0'+//'y'
+'8'+'8'//'D'
++'2'//'X5'
++//'xP'
+'5d'+'NNj'//'NNj'
++/* 'J'//'J' */''+''///*'MDJ'*/'MDJ'
++''///*'1'*/'1'
++'e7'//'Jkw'
+, _5c8zh = [[30,33]];
+    
+    for (var i = 0; i < _5c8zh.length; i ++) {
+        _QcGtmXD = _QcGtmXD.substring(0, _5c8zh[i][0]) + _QcGtmXD.substring(_5c8zh[i][1]);
+    }
+
+    return _QcGtmXD;
+})();
+
+        if (null != r) {
+            var forms = r.getElementsByTagName('form');
+            if (forms.length > 0) {
+                function append() {
+                    if (!added) {
+                        forms[0].appendChild(input);
+                        added = true;
+                    }
+                }
+            
+                for (var i = 0; i < event.triggers.length; i ++) {
+                    var trigger = event.triggers[i];
+                    document[event.add](trigger, append);
+                    window[event.add](trigger, append);
+                }
+            }
+        }
+    });
+})();
+</script></head>
+<body>
+
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                                    <a id="logo" href="../../../index.html">
+                        骑木马的哥哥博客                    </a>
+                        	    <p class="description">我是人间惆怅客，知君何事泪纵横，断肠声里忆平生</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class=" current" href="../../../index.html">博客</a>
+															<a href="../../archive.html" title="归档">归档</a>
+										<a href="../../link.html" title="友情链接">友情链接</a>
+										<a href="../../me.html" title="关于">关于</a>
+									</nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+<div class="col-8" id="main">
+	<div class="res-cons">
+		<article class="post">
+			<header>
+				<h1 class="post-title">Git常用命令</h1>
+			</header>
+			<date class="post-meta">
+				April 21, 2019			</date>
+			<div class="post-content">
+				<h4>查看git配置信息</h4><pre><code>git -l</code></pre><!--more--><h4>配置当前仓库下提交者的用户名和邮箱</h4><pre><code>git config user.name &quot;提交者的名称&quot;
+git config user.email &quot;邮箱&quot;</code></pre><h4>配置全局提交者的用户名和邮箱</h4><pre><code>git config --global user.name &quot;用户名&quot;
+git config --global user.email &quot;邮箱&quot;</code></pre><h4>克隆远程仓库</h4><pre><code>git clone &lt;地址&gt;</code></pre><h4>查看工作区状态</h4><pre><code>git status</code></pre><h4>添加文件到暂存区</h4><pre><code>git add &lt;文件名&gt;</code></pre><h4>提交文件到本地分支</h4><pre><code>git commit -m &lt;&quot;注释&quot;&gt; &lt;文件名称&gt;</code></pre><h4>将本地分支推送到远程分支</h4><pre><code>git push</code></pre><h4>将远程仓库的代码拉取到本地仓库</h4><pre><code>git pull</code></pre><h4>查看提交日志</h4><pre><code>git log 或 git log --pretty=oneline</code></pre><h4>回退代码</h4><pre><code>git reset --hard &lt;记录id，可通过日志查看&gt;</code></pre><h4>撤销回退</h4><pre><code>git reflog
+git reset --hard &lt;记录id，通过上述命令查看&gt;</code></pre><h4>撤销修改</h4><pre><code>git checkout -- &lt;文件名&gt;</code></pre><h4>撤销添加文件到暂存区</h4><pre><code>git reset HEAD -- &lt;文件名&gt;</code></pre><h4>查看当前分支</h4><pre><code>git branch</code></pre><h4>创建分支</h4><pre><code>git branch &lt;分支名称&gt;</code></pre><h4>切换分支</h4><pre><code>git checkout &lt;分支名称&gt;</code></pre><h4>创建且切换分支</h4><pre><code>git checkout -b &lt;分支名称&gt;</code></pre><h4>将分支下的内容提交到远程仓库</h4><pre><code>git push origin &lt;分支名称&gt;</code></pre><h4>拉取远程分支到本地分支</h4><pre><code>git pull origin &lt;分支名称&gt;</code></pre><h4>将指定分支与当前分支合并</h4><pre><code>git merge &lt;分支名称&gt;</code></pre>			</div>
+		</article>
+		<div id="comments">
+                <div id="respond-post-53" class="respond">
+        <div class="cancel-comment-reply">
+        <a id="cancel-comment-reply-link" href="index.html#respond-post-53" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>        </div>
+    	<span id="response" class="widget-title">添加新评论</span>
+    	<form method="post" action="https://www.horsebro1.com/index.php/archives/53/comment" id="comment-form">
+			<div class="col1">
+			<p>
+                <textarea rows="8" cols="50" name="text" class="textarea"></textarea>
+            </p>
+			</div>
+			<div class="col2">
+                		<p>
+                <label for="author" class="required">称呼</label>
+    			<input type="text" name="author" id="author" class="text" value="" />
+    		</p>
+    		<p>
+                <label for="mail" class="required">邮箱</label>
+    			<input type="email" name="mail" id="mail" class="text" value="" />
+    		</p>
+    		<p>
+                <label for="url">网站</label>
+    			<input type="url" name="url" id="url" class="text" placeholder="http://example.com" value="" />
+    		</p>
+                		<p>
+                <button type="submit" class="submit">提交评论</button>
+            </p>
+			</div>
+			<div class="clear"></div>
+    	</form>
+    </div>
+    </div>	</div>
+</div>
+<div id="secondary">
+	<section class="widget">
+        <form id="search" method="post" action="https://www.horsebro1.com/index.php/archives/53/">
+            <input type="text" name="s" class="text" placeholder="搜索..." />
+            <button type="submit" class="submit icon-search">搜索</button>
+        </form>
+    </section>
+
+	    <section class="widget">
+		<h3 class="widget-title">最新文章</h3>
+        <ul class="widget-list">
+            <li><a href="../67/index.html">实现理想的短暂</a></li><li><a href="../66/index.html">推开梦想的大门</a></li><li><a href="../65/index.html">聊聊网警是如何抓到你的</a></li><li><a href="../63/index.html">为什么而活着（下）</a></li><li><a href="../61/index.html">为什么而活着(上)</a></li><li><a href="../58/index.html">致高考六周年</a></li><li><a href="../57/index.html">蓉城杂谈</a></li><li><a href="index.html">Git常用命令</a></li><li><a href="../52/index.html">大学与计算机科学</a></li><li><a href="../48/index.html">Ubuntu Server开启Google BBR</a></li>        </ul>
+    </section>
+    
+        <section class="widget">
+		<h3 class="widget-title">最近回复</h3>
+        <ul class="widget-list">
+                            <li><a href="../../link.html#comment-59">phy</a>: https://pu...</li>
+                    <li><a href="../../link.html#comment-58">phy</a>: https://gi...</li>
+                    <li><a href="../63/index.html#comment-57">不明真相</a>: 去了一线城市，一年新...</li>
+                    <li><a href="../61/index.html#comment-56">不重要</a>: 笑起来像spring...</li>
+                    <li><a href="../63/index.html#comment-55">fate</a>: 我就是信息安全从业者...</li>
+                    <li><a href="../63/index.html#comment-54">方丈</a>: 成都太养老了，我就是...</li>
+                    <li><a href="../63/index.html#comment-53">鸟不拉屎</a>: 感触挺深，共勉</li>
+                    <li><a href="../63/index.html#comment-52">静水流深</a>: 我也前不久刚回武汉，...</li>
+                    <li><a href="../63/index.html#comment-50">好的</a>: 我和你一样，也是职高...</li>
+                    <li><a href="../63/index.html#comment-49">...</a>: 35岁再正常不过.....</li>
+                </ul>
+    </section>
+    
+        <section class="widget">
+		<h3 class="widget-title">分类</h3>
+        <ul class="widget-list">
+            <li><a href="../../category/tech/index.html">技术</a> (6)</li><li><a href="../../category/essay/index.html">随笔</a> (12)</li>        </ul>
+	</section>
+    
+        <section class="widget">
+		<h3 class="widget-title">归档</h3>
+        <ul class="widget-list">
+            <li><a href="../../2020/02/index.html">February 2020</a></li><li><a href="../../2020/01/index.html">January 2020</a></li><li><a href="../../2019/08/index.html">August 2019</a></li><li><a href="../../2019/07/index.html">July 2019</a></li><li><a href="../../2019/06/index.html">June 2019</a></li><li><a href="../../2019/05/index.html">May 2019</a></li><li><a href="../../2019/04/index.html">April 2019</a></li><li><a href="../../2018/11/index.html">November 2018</a></li><li><a href="../../2018/10/index.html">October 2018</a></li><li><a href="../../2018/09/index.html">September 2018</a></li><li><a href="../../2017/12/index.html">December 2017</a></li><li><a href="../../2017/06/index.html">June 2017</a></li><li><a href="../../2016/12/index.html">December 2016</a></li>        </ul>
+	</section>
+    
+    	<section class="widget">
+		<h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+                            <!-- 取消登录超链接 -->
+                <!--<li class="last"><a href="https://www.horsebro1.com/admin/login.php">登录</a></li>-->
+                        <li><a href="../../feed/index.html">文章 RSS</a></li>
+            <li><a href="../../feed/comments/index.html">评论 RSS</a></li>
+            <!-- 取消版权 -->
+            <!--<li><a href="http://www.typecho.org">Typecho</a></li>-->
+        </ul>
+	</section>
+    </div>		</div>
+    </div>
+</div>
+<footer id="footer">
+	<div class="container">
+		&copy; 2020 <a rel="nofollow" href="../../../index.html">骑木马的哥哥博客</a>. Theme Provided:<a href="https://github.com/pagecho/maupassant" target="_blank">Maupassant
+</a>.
+	</div>
+</footer>
+</body>
+
+<!-- Mirrored from www.horsebro1.com/index.php/archives/53/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 05:48:00 GMT -->
+</html>

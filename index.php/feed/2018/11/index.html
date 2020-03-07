@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+<channel>
+<title>骑木马的哥哥博客 - 2018年11月</title>
+<link>https://www.horsebro1.com/index.php/2018/11/</link>
+<atom:link href="https://www.horsebro1.com/index.php/feed/2018/11/" rel="self" type="application/rss+xml" />
+<language>zh-CN</language>
+<description>我是人间惆怅客，知君何事泪纵横，断肠声里忆平生</description>
+<lastBuildDate>Sun, 11 Nov 2018 12:15:00 +0000</lastBuildDate>
+<pubDate>Sun, 11 Nov 2018 12:15:00 +0000</pubDate>
+<item>
+<title>Ubuntu Server开启Google BBR</title>
+<link>https://www.horsebro1.com/index.php/archives/48/</link>
+<guid>https://www.horsebro1.com/index.php/archives/48/</guid>
+<pubDate>Sun, 11 Nov 2018 12:15:00 +0000</pubDate>
+<dc:creator>骑木马的哥哥</dc:creator>
+<description><![CDATA[1.首先确认系统内核大于4.9，使用如下命令查看：uname -r如果系统内核小于4.9，说明该系统内核不支持Google BBR]]></description>
+<content:encoded xml:lang="zh-CN"><![CDATA[
+<h3>1.首先确认系统内核大于4.9，使用如下命令查看：</h3><pre><code>uname -r</code></pre><blockquote><p>如果系统内核小于4.9，说明该系统内核不支持Google BBR</p></blockquote><!--more--><h3>2.在/etc/sysctl.conf文件的末尾追加如下内容：</h3><pre><code>net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr</code></pre><h3>3.运行如下命令使设置生效：</h3><pre><code>sysctl -p</code></pre><h3>4.查看设置是否生效，运行如下命令：</h3><pre><code>sysctl net.ipv4.tcp_available_congestion_control</code></pre><p>如果返回结果为如下，说明设置生效：</p><pre><code>net.ipv4.tcp_available_congestion_control = reno cubic bbr</code></pre><h3>5.确认Google BBR已启动，运行如下命令：</h3><pre><code>lsmod | grep bbr</code></pre><p>如果结果返回如下，说明已启动：</p><pre><code>tcp_bbr                20480  2</code></pre><blockquote><p>不同的发行版，不同的系统内核可能会返回不同的数值。如果返回结果为空，说明失败。</p></blockquote>
+]]></content:encoded>
+<slash:comments>0</slash:comments>
+<comments>https://www.horsebro1.com/index.php/archives/48/#comments</comments>
+<wfw:commentRss>https://www.horsebro1.com/index.php/feed/archives/48/</wfw:commentRss>
+</item>
+<item>
+<title>计协技术部培训课程-电脑常见故障处理</title>
+<link>https://www.horsebro1.com/index.php/archives/47/</link>
+<guid>https://www.horsebro1.com/index.php/archives/47/</guid>
+<pubDate>Sun, 11 Nov 2018 05:07:00 +0000</pubDate>
+<dc:creator>骑木马的哥哥</dc:creator>
+<description><![CDATA[今天整理markdown笔记的时候发现的这篇文章，2015年10月17号所写。算是挖坟吧。觉得还有点用，可以保留下来，所以保存到博客上备份。本次课程内容有时候，电脑出现一些小问题，自己却没办法处...]]></description>
+<content:encoded xml:lang="zh-CN"><![CDATA[
+<p>今天整理markdown笔记的时候发现的这篇文章，2015年10月17号所写。算是挖坟吧。觉得还有点用，可以保留下来，所以保存到博客上备份。</p><h2>本次课程内容</h2><p>有时候，电脑出现一些小问题，自己却没办法处理。求助高手，又担心对方不方便。作为计协的一员，我们不妨掌握一些电脑常见故障的处理方法。这样，如果大家将来遇到电脑故障，不但能帮助自己，还能帮助他人。技术，在每个人面前都是平等的，任何技术都可以通过学习来掌握，本次的课程偏向于基础，不仅非常实用，还非常简单易于学习。</p><!--more--><blockquote><p>本次的课程大纲如下：</p></blockquote><ul><li><p>预备知识</p><ul><li>电脑的组成部分</li><li>电脑各个部件的介绍</li><li>电脑故障的分类及常规的处理方法</li></ul></li><li><p>操作系统</p><ul><li>系统提速及优化，使电脑保持最佳工作状态</li><li>处理网络和浏览器故障，恢复电脑的网络畅通</li><li>远程控制，通过网络解决电脑问题</li></ul></li><li><p>PE系统维护教程</p><ul><li>制作PE启动优盘，打造维修人员的必备工具箱</li><li>进入PE的前提：使用启动菜单及BIOS设置</li><li>看电脑配置，评估电脑性能，了解电脑的工作潜力</li><li>电脑全面诊断，评估各设备的工作状态</li><li>系统开机密码破解，清除别人或自己忘记的开机密码</li><li>硬盘分区，新电脑正常使用的前提</li><li>重建主引导记录，解决电脑开机故障</li><li>系统重装，软故障的万能大杀器</li><li>系统的备份和还原，系统崩溃后快速恢复电脑工作状态</li><li>数据恢复，恢复误删除的文件</li></ul></li></ul><blockquote><ul><li><strong>掌握并精通以上技能，你几乎可以独当一面地解决计算机软件故障。</strong></li></ul></blockquote><h2>参考资料</h2><h3>预备知识</h3><p>电脑由五大部件组成，它们是：运算器，控制器，存储器，输入设备和输出设备。这么说是理论上的，可能有些抽象。具体点，我们换种说法，按照硬件来划分，便是，电脑可以由主板，CPU，内存，显卡，显示器，鼠标键盘等设备组成。一台电脑的性能也取决于这些部件了。<br>总结一下：<strong>CPU和内存决定了电脑的运行速度（也有硬盘的因素），显卡和显示器决定了电脑的图形显示精度，鼠标键盘决定了电脑使用的手感。</strong></p><p>按照分层思想，电脑故障我们可分为两类：软件故障和硬件故障，我们简称他们为：软故障和硬故障。<strong>硬故障需要大家自己动手拆装电脑，判断是到底哪个硬件出现问题，使用全新的硬件对有故障的硬件进行替换。在没有出现硬故障的情况下，软故障可通过重装系统的方式解决，这是耗时最久且最有效的方法。</strong></p><blockquote><p>电脑硬件故障的处理我们可以分为块级维修和板级维修。举个例子：如果你检测出CPU损坏，块级维修的方式是更换新的CPU；而板级维修的方式则是检测坏掉的CPU，确定是哪个电路出现问题。板级维修通常是硬件工程师做的事情，并需要大量的专业工具以及物理和逻辑电路知识。</p></blockquote><h3>操作系统</h3><p>所有软件最好是专职专用，纯绿色无需安装解压即用，无毒无捆绑，不常驻后台，术有专供的软件才是好软件。</p><p>xp系统的网络重置命令：</p><pre><code>NETSH INT IP reset resetlog.txt
+IPCONFIG /FLUSHDNS
+netsh winsock reset</code></pre><p>Win7,Win8,Win8.1,Win10系统的网络重置命令：</p><pre><code>NETSH INT IP RESET
+NETSH WINHTTP RESET PROXY
+IPCONFIG /FLUSHDNS
+netsh winsock reset</code></pre><blockquote><p>系统优化软件推荐：国产的<a href="http://mofang.ruanmei.com/">魔方电脑大师</a>(记得下载完整绿色版)，和国外的<a href="http://www.piriform.com/ccleaner">CCleaner</a>  <br>远程控制软件推荐：<a href="https://www.teamviewer.com">Teamviwer</a>  <br>系统重装必备：<a href="https://www.itsk.com/">万能驱动助理</a>，<a href="https://www.itsk.com/">IT天空一键运行库【装软件玩游戏必备】</a></p></blockquote><h3>PE</h3><p>PE全称是：Windows Preinstallation Environment)，中文名叫Windows预安装环境.我们可以理解为<strong>最小化的Windows系统</strong>，因为其最小化的特点，PE的体积非常小，从而让我们能把它保存到优盘上面运行。通过向PE添加工具集，我们可以完成大多数的电脑维护工作，例如备份和重装系统，给电脑的存储空间分区，解除系统登陆密码等等。甚至，本次课程的大部分操作都需要用PE来完成才能达到最佳的效果。PE的制作与使用方法已经是电脑维修队每一位队员的必备技能，希望大家也能够掌握PE这个强大的维护工具。</p><blockquote><p>推荐使用IT天空的PE，支持UEFI启动，工具齐全，兼容性好。<br><a href="https://www.itsk.com/">U盘装机助理</a></p></blockquote><h3>BIOS</h3><p>BIOS是英文"Basic Input Output System"的缩略词，直译过来后中文名称就是"基本输入输出系统"。其实，它是一组固化到计算机内主板上一个只读芯片上的程序，它保存着计算机最重要的基本输入输出的程序、它和CMOS配合工作，为我们提供计算机硬件最底层的、最直接的硬件设置和控制。</p><h3>电脑的开机过程</h3><p>通电--&gt;BIOS读取硬件参数进行自检--&gt;BIOS找到硬盘将启动权交给硬盘里的引导程序--&gt;引导程序加载系统内核-&gt;系统启动成功<br><strong>任何一个环节出现问题，系统都将会无法启动。不过不要担心，屏幕上会有提示。如果屏幕不亮，警惕计算机硬件故障！</strong></p><h3>硬盘分区</h3><p>分区表类型有两种：MBR和GPT(GUID)。后者需要BIOS的UEFI功能支持，支持超过2TB的大硬盘，且分区的数量几乎没有限制。**GPT在最主要作用是识别超大容量硬盘，如2TB及以上，这种硬盘MBR模式无法完全识别其容量。GPT分区表的缺点在于：只有Win7之后推出的新系统才支持，并且不支持GHO镜像的安装方式，大部分32位操作系统不支持GPT。  <br>一般，我们采用MBR方式的分区表类型，这将会有如下好处：易于维护，支持各种系统备份还原软件，引导程序故障处理方便，通杀所有操作系统。**</p><blockquote><p>如果你想尝试使用GPT的方式安装系统：</p></blockquote><p><a href="https://www.itiankong.net/thread-345631-1-1.html">使用 Easy Image X在“UEFI+GPT”模式下装系统</a></p><h3>系统开机密码破解</h3><p>Windows系统账户密码数据库文件路径：%SystemRoot%system32configsam</p><blockquote><p>其实，所有针对系统密码的操作都是在操作这个sam文件。</p></blockquote><h3>系统数据备份和还原</h3><p>安装系统之前需要关注的文件夹：</p><pre><code>C:\Users\用户名</code></pre><p><a href="http://www.piriform.com/recuva">Recuva</a>  <br><a href="http://www.xiazaiba.com/html/164.html">OneKey一键还原8.1.1.930(支持固态硬盘和动态磁盘GPT分区)官方免费版</a></p>
+]]></content:encoded>
+<slash:comments>0</slash:comments>
+<comments>https://www.horsebro1.com/index.php/archives/47/#comments</comments>
+<wfw:commentRss>https://www.horsebro1.com/index.php/feed/archives/47/</wfw:commentRss>
+</item>
+</channel>
+</rss>
